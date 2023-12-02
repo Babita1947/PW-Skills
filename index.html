@@ -61,56 +61,68 @@
         body{
             overflow-x: hidden;
         }
+        
+        
+        
     </style>
 </head>
 <body>
+    <div class=" w-[100vw] overflow-x-hidden ">
     <!--header-->
-    <header class="w-[1440px] bg-white overflow-x-hidden">
-        <div class="flex flex-row w-[1280px] justify-between mt-7 mx-auto">
-           <img src="./images/PWSKILLS_logo.svg" alt="">
+    <header class="max-w-[1440px]  bg-white overflow-x-hidden shadow-xl shadow-gray-100">
+        <div class="flex max-w-[1280px] justify-between mt-4  mx-auto relative items-center ">
+            <div>
+               <img src="./images/PWSKILLS_logo.svg" alt="">
+            </div>
+           
 
-           <form action="action_page.php" class="example w-[65%]">
-            <input type="text" placeholder="Search by product title" name="seach" class="rounded-md text-gray-700 w-full">
+           <form action="action_page.php" class="example w-[65%] hidden md:block">
+            <input type="text" placeholder="Search by product title" name="search" class="rounded-md text-gray-700 w-full Text">
            </form>
 
-           <button class="text-white bg-[#E97862]  font-semibold font-sans text-center rounded-md py-3 px-8 cursor-pointer ">
+           <button class="text-white bg-[#E97862]  font-semibold font-sans text-center rounded-md py-3 px-8 cursor-pointer hidden md:block">
               Login/ Register
            </button>
+
+           <div class=" header block md:hidden">
+            <div class="flex flex-row gap-x-3">
+                <i class="fa-solid fa-magnifying-glass w-6 h-6 cursor-pointer"></i>
+                <i class="fa-solid fa-bars w-6 h-6 cursor-pointer"></i>
+           </div>
+           </div>
+           
         </div>
     
         <!--nav bar-->
-        <nav class="mt-8 w-[1280px] flex flex-row justify-between mx-auto font-medium opacity-80 py-4">
+        <div class="hidden md:block ">
+            <nav class="mt-2 max-w-[1280px] flex flex-row justify-between mx-auto font-medium opacity-80 py-4 ">
                
-                    <button class=" bg-gray-100 text-[#000] text-center rounded py-3 px-5 cursor-pointer flex  gap-3">Courses
-                        <img src="./images/down_arrow.svg" alt="" class="h-6 pt-1 opacity-70">
-                    </button>
-                   
-                    <a href="#" class="pt-3">PW Skills Lab</a>
-                    <a href="#" class="pt-3">Job Portal</a>
-                    <a href="#" class="pt-3">Experience Portal</a>
-                    <a href="#" class="pt-3">Become an affiliate</a>
-                    <a href="#" class="pt-3">Hall Of fame</a>
+                <button class=" bg-gray-100 text-[#000] text-center rounded py-3 px-5 cursor-pointer flex  gap-3">Courses
+                    <img src="./images/down_arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                </button>
                
-        </nav>
+                <a href="#" class="pt-3">PW Skills Lab</a>
+                <a href="#" class="pt-3">Job Portal</a>
+                <a href="#" class="pt-3">Experience Portal</a>
+                <a href="#" class="pt-3">Become an affiliate</a>
+                <a href="#" class="pt-3">Hall Of fame</a>
+    </nav>
+        </div>
     </header>
     <!--hero section-->
-    <main class="w-[1440px]  bg-gray-100  py-8 overflow-x-hidden">
+    <main class="max-w-[1440px] py-8 overflow-x-hidden">
         <!--content-->
-        <div class="w-[1280px] relative mx-auto flex flex-row justify-between">
+        <div class="max-w-[1188px] relative mx-auto flex md:flex-row flex-col-reverse items-center justify-between gap-x-10">
             <!--left section-->
-            <div class="leading-8 mt-28 w-[58%]">
-                <div class="hero-section-heading hero-section-sub-heading capitalize w-[78%] font-bold py-4 flex head">
-                    <div class="" >Upscaling made 
-                        <span class="role"></span>
-                        <br>
-                        with PW Skills
-                    </div>
+            <div class="leading-9 mt-10 text-center md:text-start w-[60%]">
+                <div class="hero-section-heading hero-section-sub-heading capitalize font-bold flex flex-col flex-start head">
+                    <div class="" >Upscaling made <span class="role"></span></div>
+                    <div class="mt-2">with PW Skills</div>   
                 </div>
                 
                 <div class="text-[#3D3D3D] text-lg font-semibold mt-[16px] mr-0 mb-0 leading-7 opacity-100 headpara">
-                    <div>PW Skills is your one-stop-shop for upscaling. Get maximum value for time</div> 
-                    <div>and resources you invest, with job-ready courses & high-technology,</div>
-                    <div>available at the lowest cost.</div>
+                    <div class="md:pr-14 pr-2">PW Skills is your one-stop-shop for upscaling. Get maximum value for time and resources you invest, with job-ready courses & high-technology,available at the lowest cost.
+                    </div>
                 </div>
                 <button class="text-white bg-[#E97862]  font-semibold font-sans text-center rounded-md py-2 px-14 cursor-pointer mt-8">
                     Explore Courses
@@ -118,16 +130,16 @@
             </div>
             
             <!--right section-->
-            <div class="w-[42%] relative">
+            <div class="w-[40%] relative">
                  <img src="./images/hero-bg.png" alt="" class="">
                  <img src="./images/hero-shadow.png" alt="" class="absolute top-28 right-10 z-10 opacity-100">
             </div>
         </div>
 
         <!--4-boxes-->
-        <div class="w-[1280px] flex flex-row justify-between mx-auto mt-10">
+        <div class="max-w-[1188px] flex flex-row items-center justify-center md:justify-between gap-x-5 md:gap-x-0 mx-auto mt-10 gap-y-6 flex-wrap ">
             <!--box-1-->
-             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7">
+             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7 shadow-md shadow-gray-200">
                 <img src="./images/statistics1.png" alt="" class="">
                 <div>
                     <h2 class="font-[600] text-2xl text-[#3D3D3D]">55%</h2>
@@ -135,7 +147,7 @@
                 </div>
              </div>
              <!--box-2-->
-             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7">
+             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7 shadow-md shadow-gray-200">
                 <img src="./images/statistics2.png" alt="">
                 <div>
                     <h2 class="font-[600] text-2xl text-[#3D3D3D] ">600+</h2>
@@ -143,7 +155,7 @@
                 </div>
              </div>
              <!--box-3-->
-             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7">
+             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7 shadow-md shadow-gray-200">
                 <img src="./images/statistics3.png" alt="">
                 <div>
                     <h2 class="font-[600] text-2xl text-[#3D3D3D]">12000+</h2>
@@ -151,7 +163,7 @@
                 </div>
              </div>
              <!--box-4-->
-             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7">
+             <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7 shadow-md shadow-gray-200">
                 <img src="./images/statistics4.png" alt="">
                 <div>
                     <h2 class="font-[600] text-2xl text-[#3D3D3D]">400+</h2>
@@ -162,30 +174,49 @@
     </main>
    
     <!--Courses-->
-    <div class="w-[1440px] coursesbackground  py-8 overflow-x-hidden">
-        <header class="w-[1280px] relative flex justify-between mx-auto ">
-            <h2 class="text-[32px] font-bold">Our Courses</h2>
-            <button class="bg-gray-100 text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex  gap-3">View all
-                <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
-            </button>
-        </header>
-
-        <div class="w-[1280px] relative flex justify-start pl-7 pt-7 mx-auto space-x-10">
-            <div class="flex flex-col">
-                <a href="#" class="font-normal">Trending</a>
-                <div class=" h-[0.5px] bg-gray-500 mx-auto"></div>
-            </div>
-            <a href="#" class="text-gray-500">Live</a>
-            <a href="#" class="text-gray-500">Community</a>
+    <div class="coursesbackground  py-8 overflow-x-hidden flex flex-col">
+        
+            <header class="max-w-[1280px] relative flex justify-between mx-24">
+                <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Our Courses</h2>
+                <div class="hidden mywidth:block minw:block">
+                    <button class="bg-white text-gray-800 font-bold text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300 aspiration">View all
+                        <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                    </button>
+                </div>
+            </header>
             
-        </div>
-        <!--line-->
-        <div class="w-[1280px] h-[0.5px] bg-gray-500 mx-auto mt-3 "></div>
+            <div class="max-w-[1280px] px-20 ">
+                <div class="flex items-center mywidth:justify-start justify-between border-b gap-x-6 test-gray-800 mt-4">
+    
+                    <div class=" relative h-full flex items-center justify-center">
+                        <div class="flex flex-col text-sm py-[10px] md:text-base md:px-6 md:py-3 font-semibold gap-2 justify-center items-center aspiration cursor-pointer text-gray-900 rounded-none px-1">Trending</div>
+                        <div class="block border-b border-gray-900 absolute bottom-[-1px] w-[100%]"></div> 
+                        <!--line-->
+                        <div class=" block border-b border-gray-900 mx-auto mt-3 bottom-[-1px] w-full"></div>                             
+                    </div>
+        
+                    <div class="relative h-full flex items-center justify-center">
+                        <div class="text-sm py-[10px] md:text-base md:px-6 md:py-3 font-bold flex gap-2 justify-center items-center aspiration cursor-pointer rounder-none px-1 text-gray-600">Live</div>
+                        <div class="hidden"></div>
+                    </div>
+                    
+        
+                    <div class="relative h-full flex items-center justify-center">
+                        <div class="text-sm py-[10px] md:text-base md:px-6 md:py-3 font-bold flex gap-2 justify-center items-center aspiration cursor-pointer rounder-none px-1 text-gray-600">Community</div>
+                        <div class="hidden"></div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+            
+        
+        
         
         <!--OUR COURSES-->
-        <div class="w-[1280px] pt-6 scroll-smooth items-center mx-auto flex flex-row justify-center gap-x-10 py-8 ">
+        <div class="max-w-[1280px] pt-6 scroll-smooth items-center mx-auto flex flex-row justify-center gap-x-10 py-8 ">
             <!-- box-1 -->
-            <div class="bg-white flex flex-col w-[30%] rounded-3xl overflow-hidden">
+            <div class="bg-white w-full  smw:w-[50%] minw:w-[30%] rounded-3xl overflow-hidden">
                 <!--image-1-->
                 <img src="./images/Full Stack Web Development.png" alt="" class="">
                 <!--course header-->
@@ -243,7 +274,7 @@
 
 
             <!-- box-2 -->
-            <div class="bg-white flex flex-col w-[30%] rounded-3xl overflow-hidden">
+            <div class="bg-white hidden smw:block w-[50%] minw:w-[30%] rounded-3xl overflow-hidden">
                 <!--image-1-->
                 <img src="./images/Full Stack Web Development.png" alt="" class="">
                 <!--course header-->
@@ -300,7 +331,7 @@
             </div>
 
             <!-- box-3 -->
-            <div class="bg-white flex flex-col w-[30%] rounded-3xl overflow-hidden">
+            <div class="bg-white hidden minw:block w-[30%] rounded-3xl overflow-hidden">
                 <!--image-1-->
                 <img src="./images/Full Stack Web Development.png" alt="" class="">
                 <!--course header-->
@@ -350,117 +381,146 @@
                         Explore
                     </button>
 
-                    <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer">
+                    <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer shadow-sm shadow-gray-300">
                         Enroll Now
                     </button>
                 </div>    
             </div>
 
         </div>
+        
          <!--left and right shift arrow-->
-         <div class="w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
-            <div class="bg-white w-10 h-10 rounded-full ">
-                <i class="fa-solid fa-chevron-left opacity-40 pl-4 pt-3" style="color: #e97862;"></i>
+         <div class="hidden smw:block">
+            <div class="max-w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
+                <div class="bg-white w-10 h-10 rounded-full ">
+                    <i class="fa-solid fa-chevron-left opacity-40 pl-4 pt-3" style="color: #e97862;"></i>
+                </div>
+                <div class="bg-white w-10 h-10  rounded-full ">
+                    <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
+                </div>
+             </div> 
+         </div>
+
+         <div class="flex justify-center ">
+            <div class="block mywidth:hidden">
+                <button class="bg-white mt-3 text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300">View all
+                    <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                </button>
             </div>
-            <div class="bg-white w-10 h-10  rounded-full ">
-                <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
-            </div>
-         </div> 
+         </div>
 
         
     </div>
 
     <!--cards-section-->
-    <div class="w-[1280px] py-8 mx-auto overflow-x-hidden">
-        <h2 class="w-full text-[32px] leading-8 font-bold text-start">Explore Our Ecosystem</h2>
-        <h6 class="w-full text-lg font-normal text-[#757575] mt-2">A one-stop destination for all your learning to placement needs</h6>
+    <div class="max-w-[1280px] py-8 md:!py-14 md:mx-auto overflow-x-hidden">
+        <div class="px-4 md:px-15 w-full mywidth:w-fit ">
+            <h2 class="w-full text-[32px] leading-8 font-bold text-center mywidth:text-start">Explore Our Ecosystem</h2>
+            <h6 class="w-full text-lg font-normal text-[#757575] mt-2 text-center mywidth:text-start">A one-stop destination for all your learning to placement needs</h6>
+            
+    
+            <!--Cards-->
+    
+            <div class="flex flex-col w-full mywidth:fit mywidth:flex-row items-center justify-between gap-x-16 pt-[40px] pr-[0px] pb-[0px]">
+                <!--left-section-->
+                <div class="flex flex-col boxw:flex-row gap-x-3">
+    
+                    <!--column-1-->
+                    <div class="flex flex-col items-center justify-center gap-y-4">
+                        <!--card-1-->
+                        <div class=" card group rounded-lg p-[14px] m-2 px-8 py-4 bg-sky-50 md:bg-transparent md:hover:bg-sky-50 h-[300px] w-full mywidth:w-[380px]">
+
+                            <img src="./images/products-icon1.png" alt="" class="">
+                            <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3 " >
+                                PW Skills Lab
+                            </h4>
+                            <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 mt-3 aspiration">
+                                Buying a new PC is no longer required, Access unlimited computing power!
+                            </p>
+                            <div class="smw:block md:hidden md:group-hover:block">
+                                <button class="text-white bg-black font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                    Explore
+                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                </button>
+                            </div>
+
+                        </div>
         
-
-        <!--Cards-->
-
-        <div class="flex flex-row items-center justify-between gap-x-16 pt-[40px] pr-[0px] pb-[0px]">
-            <!--left-section-->
-            <div class="flex flex-row gap-x-3">
-
-                <!--column-1-->
-                <div class="flex flex-col items-center justify-center gap-y-4">
-                    <!--card-1-->
-                    <div class="card rounded-lg p-[14px] m-2 px-8 py-8 bg-sky-50">
-                       <img src="./images/products-icon1.png" alt="" class="">
-                        <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">PW Skill Lab</h4>
-                        <p class="text-base leading-6 font-normal text-[#757575] mt-3">Buying a new PC is no longer required, Access unlimited computing power!</p>
-                        <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                            Explore
-                            <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                        </button>
+                        <!--card-2-->
+                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-pink-50 md:bg-transparent md:hover:bg-pink-50 h-[300px] w-full mywidth:w-[380px]">
+                            <img src="./images/products-icon2.png" alt="" class="">
+                             <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Experience Portal</h4>
+                             <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold mt-3 text-gray-500 aspiration">Self-paced portal prioritizes hands-on training with 570+ internship projects.</p>
+                             <div class="smw:block md:hidden md:group-hover:block">
+                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                    Explore
+                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                </button>
+                             </div>
+                             
+                         </div>
+                       
+                        <!--card-3-->
+                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-purple-50 md:bg-transparent md:hover:bg-purple-50 h-[300px] w-full mywidth:w-[380px]">
+                            <img src="./images/products-icon3.png" alt="" class="">
+                             <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Hall Of Fame</h4>
+                             <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 aspiration mt-3">Our student placements and 100K+ career transitions speak volumes.</p>
+                             <div class="smw:block md:hidden md:group-hover:block">
+                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                    Explore
+                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                </button>
+                             </div>
+                             
+                         </div>
                     </div>
     
-                    <!--card-2-->
-                    <div class="card rounded-lg p-[14px] m-2 px-8 py-8 bg-pink-50">
-                        <img src="./images/products-icon2.png" alt="" class="">
-                         <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Experience Portal</h4>
-                         <p class="text-base leading-6 font-normal text-[#757575] mt-3">Self-paced portal prioritizes hands-on training with 570+ internship projects.</p>
-                         <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                             Explore
-                             <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                         </button>
-                     </div>
-                   
-                    <!--card-3-->
-                    <div class="card rounded-lg p-[14px] m-2 px-8 py-8 bg-purple-50">
-                        <img src="./images/products-icon3.png" alt="" class="">
-                         <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Hall Of Fame</h4>
-                         <p class="text-base leading-6 font-normal text-[#757575] mt-3">Our student placements and 100K+ career transitions speak volumes.</p>
-                         <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                             Explore
-                             <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                         </button>
-                     </div>
+                    <!--column-2-->
+                    <div class="flex flex-col items-center justify-center gap-y-6 pt-8">
+                        <!--card-4-->
+                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-yellow-50 md:bg-transparent md:hover:bg-yellow-50 h-[300px] w-full mywidth:w-[380px]">
+                            <img src="./images/products-icon4.png" alt="" class="">
+                             <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Job Portal</h4>
+                             <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 aspiration mt-3">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                             <div class="smw:block md:hidden md:group-hover:block">
+                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                    Explore
+                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                </button>
+                             </div>
+                         </div>
+                        <!--card-5-->
+                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-blue-50 md:bg-transparent md:hover:bg-blue-50 h-[300px] w-full mywidth:w-[380px]">
+                            <img src="./images/products-icon5.png" alt="" class="">
+                            <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Become an affiliate</h4>
+                            <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 aspiration mt-3">Explore affiliate marketing opportunities and attain financial freedom.</p>
+                            <div class="smw:block md:hidden md:group-hover:block">
+                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                    Explore
+                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!--column-2-->
-                <div class="flex flex-col items-center justify-center gap-y-6 pt-8">
-                    <!--card-4-->
-                    <div class="card rounded-lg p-[14px] m-2 px-8 py-8 bg-yellow-50">
-                        <img src="./images/products-icon4.png" alt="" class="">
-                         <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Job Portal</h4>
-                         <p class="text-base leading-6 font-normal text-[#757575] mt-3">Use exceptional templates for a stand-out resume minus the sign up process.</p>
-                         <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                             Explore
-                             <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                         </button>
-                     </div>
-                 <!--card-5-->
-                 <div class="card rounded-lg p-[14px] m-2 px-8 py-8 bg-blue-50">
-                    <img src="./images/products-icon5.png" alt="" class="">
-                     <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Become an affiliate</h4>
-                     <p class="text-base leading-6 font-normal text-[#757575] mt-3">Explore affiliate marketing opportunities and attain financial freedom.</p>
-                     <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                         Explore
-                         <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                     </button>
+                
+                <!--right-section-->
+                 <div>
+                    <img src="./images/XML_Js_logo.svg"  class="h-[450px] w-[480px] hidden md:block" alt="">
                  </div>
-                </div>
-            </div>
-            
-            <!--right-section-->
-             <div>
-                <img src="./images/XML_Js_logo.svg"  class="h-[450px] w-[480px] " alt="">
-             </div>
-        </div>
+            </div></div>
     </div>
 
 
     <!--Parallex_Effect Section-->
     <div class="wrapper overflow-x-hidden">
-        <div class="w-[1440px] relative">
+        <div class="max-w-[1440px] relative hidden md:block">
             <!--section-1--> 
-            <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-[#192A36] bg-fixed  px-20 mx-auto flex items-center justify-center pb-0">
+            <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-[#192A36] bg-fixed px-20 mx-auto flex flex-col md:flex-row items-center justify-center pb-0">
     
                 <div class="w-[1280px] z-10 pr-44 my-auto justify-center flex flex-col items-start relative">
-                    
                      <!--Circle-->
-                    <div class="h-80 w-80 rounded-full bg-[#398DC8] absolute right-[38%] top-[21%] z-10">
+                    <div class="hidden md:block h-80 w-80 rounded-full bg-[#398DC8]      absolute right-[38%] top-[21%] z-10">
     
                         <div class="h-full w-full flex flex-col justify-center items-center">
                             <div class="text-start">
@@ -476,33 +536,28 @@
                     <div class="flex flex-col">
                         <h1 class="text-4xl leading-9 font-bold text-white">Guilding You At Every <br>
                         <span class="">Step!</span> </h1>
-                    <div class="text-base leading-6 font-normal text-[#EAECEF] mt-[8px] mr-[0px] mb-[0px]">Our Tap Mentors show you the way,<br> to becoming a thorough professinal!</div>
+                        <div class="text-base leading-6 font-normal text-[#EAECEF] mt-[8px] mr-[0px] mb-[0px]">Our Tap Mentors show you the way,<br> to becoming a thorough professinal!</div>
     
-                    <div class="flex flex-col  gap-y-5 pt-10 flex-wrap">
-                        <div class="flex flex-row gap-x-4">
-                            <img src="./images/amazon-logo_arrow.svg" alt="" class="w-28">
-                            <img src="./images/google-logo.svg" alt="" class="w-28">
-                            <img src="./images/walmart-logo.svg" alt="" class="w-28">
+                        <div class="flex flex-col  gap-y-5 pt-10 flex-wrap">
+                            <div class="flex flex-row gap-x-4">
+                                <img src="./images/amazon-logo_arrow.svg" alt="" class="w-28">
+                                <img src="./images/google-logo.svg" alt="" class="w-28">
+                                <img src="./images/walmart-logo.svg" alt="" class="w-28">
+                            </div>
+                            <div class="flex flex-row gap-x-4">
+                                <img src="./images/microsoft-logo.svg" alt="" class="w-28">
+                                <img src="./images/linkedin-logo.svg" alt="" class="w-28">
+                            </div>
                         </div>
-                        <div class="flex flex-row gap-x-4">
-                            <img src="./images/microsoft-logo.svg" alt="" class="w-28">
-                            <img src="./images/linkedin-logo.svg" alt="" class="w-28">
+                        <p class="text-yellow-500 pt-10">& more...</p>
+                        <div class="flex flex-col gap-y-7">
+                            
+                            <button class="text-white bg-[#192A36]  font-semibold font-sans text-center rounded-md px-6 py-6 cursor-pointer mt-6 w-fit">
+                                SKIP
+                                <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                            </button>
                         </div>
                     </div>
-                    <p class="text-yellow-500 pt-10">& more...</p>
-                    <div class="flex flex-col gap-y-7">
-                        <button class="text-black bg-white  font-medium gap-5 font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 w-fit">
-                            Explore
-                            <i class="fa-solid fa-arrow-right fa-sm hidden" style="color: #000;"></i>
-                        </button>
-                        <button class="text-white bg-[#192A36]  font-semibold font-sans text-center rounded-md px-6 py-6 cursor-pointer mt-6 w-fit">
-                            SKIP
-                            <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                        </button>
-                    </div>
-    
-                   </div>
-               
                 </div> 
                 <!--banner-1-->
                 <div class="h-full absolute right-0 top-0 w-1/2">
@@ -511,9 +566,39 @@
     
             </div>
         </div>
-        <div class="w-[1440px] relative">
+
+        <!--section-1 [before medium size]-->
+        <div class="block md:hidden max-w-[1200px]">
+            <div class="w-[100%]">
+                <img src="./images/banner-1.png" alt="" class="w-[100%]">
+            </div>
+            <div class="flex flex-col">
+                <div class="w-full bg-no-repeat bg-center bg-cover bg-[#192A36] bg-fixed px-4  flex flex-col justify-center items-center my-auto h-[340px] -mt-4">
+                    <div class="flex flex-col items-center justify-center ">
+                        <h2 class="text-3xl leading-9 font-bold text-white">Guiding You At Every Step!</h2>
+                        <p class="text-base leading-6 font-normal text-[#EAECEF] mt-[8px] mr-[0px] mb-[0px]">Our Top Mentors show you the way to becoming a thorough professional!</p>
+                        <div class="flex flex-row gap-x-4 pt-6">
+                            <img src="./images/amazon-logo_arrow.svg" alt="" class="w-28">
+                            <img src="./images/google-logo.svg" alt="" class="w-28">
+                            <img src="./images/walmart-logo.svg" alt="" class="w-28">
+                            <img src="./images/microsoft-logo.svg" alt="" class="w-28">
+                            <img src="./images/linkedin-logo.svg" alt="" class="w-28">
+                        </div>
+                        <p class="text-yellow-500 pt-5 text-center">& more...</p>
+                    </div>
+                    <button class="text-black bg-white font-medium gap-5 font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 w-full">
+                        Explore
+                        <i class="fa-solid fa-arrow-right fa-sm hidden" style="color: #000;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="max-w-[1440px] relative hidden md:block">
             <!--section-2--> 
-            <div class="px-20 mx-auto w-full h-screen bg-no-repeat bg-center bg-cover bg-[#3A9076] bg-fixed flex items-center justify-center pb-0">
+            <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-[#3A9076] bg-fixed px-20 mx-auto flex items-center justify-center pb-0">
     
                 <div class="w-[1280px] z-10 pr-44 my-auto justify-center flex flex-col items-start relative">
                     
@@ -570,7 +655,7 @@
         </div>
 
 
-        <div class="w-[1440px] relative">
+        <div class="max-w-[1440px] relative hidden md:block">
             <!--section-3--> 
             <div class="px-20 mx-auto w-full h-screen bg-no-repeat bg-center bg-cover bg-[#9D4438] bg-fixed flex items-center justify-center pb-0">
     
@@ -629,7 +714,7 @@
             </div>
         </div>
 
-        <div class="w-[1440px] relative">
+        <div class="max-w-[1440px] relative hidden md:block">
             <!--section-4--> 
             <div class="px-20 mx-auto w-full h-screen bg-no-repeat bg-center bg-cover bg-[#80467D] bg-fixed flex items-center justify-center pb-0">
     
@@ -690,34 +775,42 @@
     </div>
 
     <!--Our Achievers Work With-->
-    <div class="w-[1440px] pt-24 achievers">
-        <div class="w-full px-20 py-8 mx-auto">
-            <h2 class="w-full text-[32px] leading-8 font-bold text-start">Our Achievers Work With</h2>
-            <div class="flex flex-row flex-between gap-16 py-8">
-                <div class="bg-white h-24 w-72 rounded-xl flex justify-center items-center">
-                    <img src="images/DELL_logo.png" alt="" class="w-[60%] h-20 aspect-[4/2] object-contain mx-auto">
+    <div class="max-w-[1440px] pt-24 achievers">
+        <div class="max-w-[1280px] px-20 py-8 mx-auto">
+            <h2 class="w-full text-[36px] leading-8 font-bold mywidth:w-fit text-center md:text-start">Our Achievers Work With</h2>
+            <div class="flex items-center justify-center md:flex-between gap-16 py-8">
+                <div class="">
+                    <div class="bg-white h-24 w-56 rounded-xl flex justify-center items-center shadow-sm shadow-gray-300">
+                        <img src="images/walmart.png" alt="" class="w-[60%] h-16 aspect-[4/2] object-contain mx-auto ">
+                    </div>
                 </div>
                 
-                <div class="bg-white h-24 w-72 rounded-xl flex justify-center items-center">
-                    <img src="images/Unacademy_logo.png" alt="" class="w-[60%] h-20 aspect-[4/2] mx-auto">
+                <div class="hidden smw:block">
+                    <div class="bg-white h-24 w-56 rounded-xl flex justify-center items-center shadow-sm shadow-gray-300">
+                        <img src="images/Reliance_logo.png" alt="" class="w-[60%] h-16 aspect-[4/2] mx-auto">
+                    </div>
                 </div>
 
-                <div class="bg-white h-24 w-72 rounded-xl flex justify-center items-center">
-                    <img src="images/VISA.png" alt="" class="w-[60%] h-20 aspect-[4/2] mx-auto">
+                <div class="hidden minw:block">
+                    <div class="bg-white h-24 w-56 rounded-xl flex justify-center items-center shadow-sm shadow-gray-300">
+                        <img src="images/ineuron-logo.png" alt="" class="w-[60%] h-16 aspect-[4/2] mx-auto">
+                    </div>
                 </div>
 
-                <div class="bg-white h-24 w-72 rounded-xl flex justify-center items-center">
-                    <img src="images/oracle_logo.png" alt="" class="w-[60%] h-20 aspect-[4/2] mx-auto">
+                <div class="hidden md:block">
+                    <div class="bg-white h-24 w-56 rounded-xl flex justify-center items-center shadow-sm shadow-gray-300">
+                        <img src="images/oracle_logo.png" alt="" class="w-[60%] h-16 aspect-[4/2] mx-auto">
+                    </div>
                 </div>
                 
             </div>
 
             <!--left and right shift arrow-->
-            <div class="w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
-                <div class="bg-white w-10 h-10 rounded-full ">
+            <div class="max-w-[1280px] flex items-center justify-center gap-x-4 py-4 mt-6 mx-auto ">
+                <div class="bg-[#ffffff] w-10 h-10 rounded-full ">
                     <i class="fa-solid fa-chevron-left pl-4 pt-3" style="color: #e97862;"></i>
                 </div>
-                <div class="bg-white w-10 h-10  rounded-full ">
+                <div class="bg-[#ffffff] w-10 h-10  rounded-full ">
                     <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
                 </div>
             </div>
@@ -726,21 +819,23 @@
     </div>
 
      <!--Success Stories-->
-     <div class="w-[1440px] py-14 flex flex-col justify-center items-center achievers">
+     <div class="max-w-[1440px] py-14 flex flex-col achievers px-4 md:px-20">
                 
-        <header class="w-[1280px] flex justify-between">
-            <h2 class="text-[32px] font-bold">Success Stories</h2>
-            <button class="bg-white text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex gap-3">View all
-                <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
-            </button>
+        <header class=" flex justify-between ">
+            <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Success Stories</h2>
+                <div class="hidden mywidth:block minw:block">
+                    <button class="bg-white text-gray-800 font-bold text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300 aspiration">View all
+                        <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                    </button>
+                </div>
         </header>
 
         <!--Box section-->
-        <div class="flex flex-row justify-between gap-9">
+        <div class="max-w-[1280px] flex flex-row justify-around  gap-2 md:gap-9">
         <!--box-1-->
-        <div class=" w-[280px]  pt-6">
+        <div class="w-[480px] smw:w-[280px] pt-6 ">
 
-            <div class="text-[#3A8726] rounded-t-xl bg-[#E3EFE0] h-[40px] w-[280px] flex justify-center items-center text-base leading-6 font-bold">80% Increment</div>
+            <div class="text-[#3A8726] rounded-t-xl bg-[#E3EFE0] h-[40px]w-full smw:w-[280px] flex justify-center items-center text-base leading-6 font-bold">80% Increment</div>
 
             <div class="bg-white rounded-b-xl">
                 <div class="flex flex-row justify-between">
@@ -780,7 +875,7 @@
         </div>
 
         <!--box-2-->
-        <div class=" w-[280px]  pt-6">
+        <div class=" w-[280px] pt-6 hidden smw:block">
 
             <div class="text-[#3A8726] rounded-t-xl bg-[#E3EFE0] h-[40px] w-[280px] flex justify-center items-center text-base leading-6 font-bold">80% Increment</div>
 
@@ -822,7 +917,7 @@
         </div>
 
         <!--box-3-->
-        <div class=" w-[280px]  pt-6">
+        <div class=" w-[280px]  pt-6 hidden minw:block">
 
             <div class="text-[#3A8726] rounded-t-xl bg-[#E3EFE0] h-[40px] w-[280px] flex justify-center items-center text-base leading-6 font-bold">80% Increment</div>
 
@@ -864,9 +959,9 @@
         </div>
 
         <!--box-4-->
-        <div class=" w-[280px] pt-6">
+        <div class=" w-[280px] pt-6 hidden md:block">
 
-            <div class="text-[#3A8726] rounded-t-xl bg-[#E3EFE0] h-[40px] w-[280px] flex justify-center items-center text-base leading-6 font-bold">80% Increment</div>
+            <div class="text-[#3A8726] rounded-t-xl bg-[#E3EFE0] h-[40px] w-[280px] flex justify-center items-center text-base leading-6 font-bold ">80% Increment</div>
 
             <div class="bg-white rounded-b-xl">
                 <div class="flex flex-row justify-between">
@@ -907,28 +1002,43 @@
         </div>
 
         <!--left and right shift arrow-->
-        <div class="w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
-            <div class="bg-white w-10 h-10 rounded-full ">
-                <i class="fa-solid fa-chevron-left pl-4 pt-3" style="color: #e97862;"></i>
+        <div class="hidden smw:block">
+            <div class="max-w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
+                <div class="bg-white w-10 h-10 rounded-full ">
+                    <i class="fa-solid fa-chevron-left opacity-40 pl-4 pt-3" style="color: #e97862;"></i>
+                </div>
+                <div class="bg-white w-10 h-10  rounded-full ">
+                    <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
+                </div>
+             </div> 
+         </div>
+
+         <div class="flex justify-center ">
+            <div class="block mywidth:hidden">
+                <button class="bg-white mt-3 text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300">View all
+                    <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                </button>
             </div>
-            <div class="bg-white w-10 h-10  rounded-full ">
-                <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
-            </div>
-        </div>
+         </div>
     </div>
      
     <!--Frequently Asked Question Section-->
-    <section class="w-[1440px] flex flex-col justify-center items-center py-20 bg-gray-50">
-        <header class="w-[1280px] flex justify-between leading-[30px] ">
-            <h2 class="text-[32px] font-bold pb-[25px]">Frequently Asked Questions</h2>
-            <button class="bg-[#FFFFFF] text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex  gap-3">View all
-                <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
-            </button>
+    <section class="max-w-[1440px] flex flex-col py-20 bg-gray-50 px-4 md:px-20">
+        
+        <header class=" flex justify-between items-center leading-[30px] ">
+            <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Frequently Asked Questions</h2>
+            <div class="hidden mywidth:block">
+                <button class="bg-white text-gray-800 font-bold text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300 aspiration">View all
+                    <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                </button>
+            </div>
         </header>
+        
+        
 
-        <div class="w-[1280px] flex items-start justify-between mx-auto gap-x-8 py-5">
+        <div class="max-w-[1280px] flex flex-row  gap-x-8 py-5">
             <!--left section-->
-            <div class="flex flex-col w-[60%] gap-y-4 ">
+            <div class="flex flex-col w-full md:w-[60%] gap-y-4 ">
                 <div class="flex items-center justify-between border-b pb-4 cursor-pointer">
                    <h4 class="text-xl leading-[30px] frequently text-[#414347] font-bold ">
                     I need to purchase a course. Whom should I contact ?
@@ -959,19 +1069,17 @@
             </div>
 
             <!--right section-->
-            <div class="flex flex-col w-[40%] gap-y-6">
-                <div class="w-full flex justify-center items-center px-5">
-                    <img src="images/maxresdefault (1).jpg" alt="" class="rounded-none">
-                </div>
-                <p class="w-full text-justify text-gray-800  ">Contact our counselors through the chat support on our website. Look for the chat option on the bottom right of the Homepage. Name the course you’re interested in, and the counseling team will guide you through the admission process.</p>
+            <div class="md:w-[40%] gap-y-6 hidden md:block">
+                <p class=" text-gray-800">Contact our counselors through the chat support on our website. Look for the chat option on the bottom right of the Homepage. Name the course you’re interested in, and the counseling team will guide you through the admission process.
+                </p>
             </div>
             
         </div>
     </section>
 
     <!--Footer Section-->
-    <footer class="w-[1440px] px-20  mx-auto bg-gray-900">
-        <div class="w-[1280px] mx-auto w-7xl py-16 flex justify-between flex-wrap">
+    <footer class="max-w-[1440px] px-20  bg-gray-900">
+        <div class="max-w-[1280px] mx-auto w-7xl py-16 flex flex-col md:flex-row justify-between flex-wrap">
              <!--left section-->
            <div class="space-y-6 flex flex-col justify-start">
               <img src="./images/pwskills-white.png" alt="" class="w-[141px] h-[51px] -ml-3">
@@ -995,10 +1103,10 @@
               <img src="./images/ISO_logo.svg" alt="" class="w-16">
            </div>
            <!--right section-->
-            <div class="mt-0 w-2/3">
+            <div class="mt-0 md:w-2/3">
                <!--section-1-->
-                <div class="w-full flex flex-row gap-8">
-                    <div class="w-1/2 flex flex-col relative">
+                <div class="w-full flex flex-col mywidth:flex-row gap-8">
+                    <div class="mywidth:w-1/2 flex flex-col relative">
                         <h4 class="text-xl leading-[30px] font-semibold text-white ">Company</h4>
                         <div class="h-1 w-[80%] bg-[#E97862] absolute top-10 rounded-sm"></div>
                         <div class="flex flex-wrap mt-12 text-[#C1C6CE]">
@@ -1012,7 +1120,7 @@
                         
                     </div>
                     
-                    <div class="w-1/2 flex flex-col relative">
+                    <div class="mywidth:w-1/2 flex flex-col relative">
                         <h4 class="text-xl leading-[30px] font-semibold text-white ">Products</h4>
                         <div class="h-1 w-[80%] bg-[#E97862] absolute top-10 rounded-sm"></div>
                         <div class="flex flex-wrap mt-12 text-[#C1C6CE]">
@@ -1031,6 +1139,7 @@
            
     </footer>
 
+    </div>
    
     
     
