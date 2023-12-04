@@ -72,10 +72,10 @@
     </style>
 </head>
 <body>
-    <div class=" w-[100vw] overflow-x-hidden ">
+    <div class=" w-[100vw] overflow-x-hidden">
     <!--header-->
-    <header class="max-w-[1440px]  bg-white overflow-x-hidden shadow-xl shadow-gray-100">
-        <div class="flex max-w-[1280px] justify-between mt-4  mx-auto relative items-center ">
+    <header class="max-w-[1440px] bg-white overflow-x-hidden shadow-xl shadow-gray-100 px-4 md:px-20 py-4 pb-0 mx-auto">
+        <div class="flex max-w-[1280px] justify-between mb-2 relative items-center ">
             <div>
                <img src="./images/PWSKILLS_logo.svg" alt="">
             </div>
@@ -91,8 +91,8 @@
 
            <div class=" header block md:hidden">
             <div class="flex flex-row gap-x-3">
-                <i class="fa-solid fa-magnifying-glass w-6 h-6 cursor-pointer"></i>
-                <i class="fa-solid fa-bars w-6 h-6 cursor-pointer"></i>
+                <img src="./images/search_bar.svg" alt="" class="h-6 w-6">
+                <i class="fa-solid fa-bars fa-lg mt-3"></i>
            </div>
            </div>
            
@@ -101,48 +101,52 @@
         <!--nav bar-->
         <div class="hidden md:block ">
             <nav class="mt-2 max-w-[1280px] flex flex-row justify-between mx-auto font-medium opacity-80 py-4 ">
-               
-                <button class=" bg-gray-100 text-[#000] text-center rounded py-3 px-5 cursor-pointer flex  gap-3">Courses
-                    <img src="./images/down_arrow.svg" alt="" class="h-6 pt-1 opacity-70">
-                </button>
-               
-                <a href="#" class="pt-3">PW Skills Lab</a>
-                <a href="#" class="pt-3">Job Portal</a>
-                <a href="#" class="pt-3">Experience Portal</a>
-                <a href="#" class="pt-3">Become an affiliate</a>
-                <a href="#" class="pt-3">Hall Of fame</a>
-    </nav>
+                
+                    <button class=" bg-gray-100 text-[#000] text-center rounded py-3 px-5 cursor-pointer flex  gap-3">Courses
+                        <img src="./images/down_arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                    </button>
+                
+                    <a href="#" class="pt-3">PW Skills Lab</a>
+                    <a href="#" class="pt-3">Job Portal</a>
+                    <a href="#" class="pt-3">Experience Portal</a>
+                    <a href="#" class="pt-3">Become an affiliate</a>
+                    <a href="#" class="pt-3">Hall Of fame</a>
+        </nav>
         </div>
     </header>
     <!--hero section-->
-    <main class="max-w-[1440px] py-8 overflow-x-hidden">
+    <main class="max-w-[1440px] py-8 overflow-x-hidden mx-auto">
         <!--content-->
-        <div class="max-w-[1188px] relative mx-auto flex md:flex-row flex-col-reverse items-center justify-between gap-x-10">
+        <div class="max-w-[1280px] relative mx-auto flex md:flex-row flex-col-reverse items-center text-center md:text-left justify-between gap-x-10">
             <!--left section-->
-            <div class="leading-9 mt-10 text-center md:text-start w-[60%]">
-                <div class="hero-section-heading hero-section-sub-heading capitalize font-bold flex flex-col flex-start head">
-                    <div class="" >Upscaling made <span class="role"></span></div>
-                    <div class="mt-2">with PW Skills</div>   
+            <div class=" leading-9 md:leading-[44px] font-bold mt-10 text-center md:text-start md:w-[58%]">
+                <div class="hero-section-heading hero-section-sub-heading capitalize font-bold flex flex-col flex-start head ">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="text-2xl md:text-4xl text-[#000]hidden md:block">Upscaling made
+                        <span class="role text-2xl md:text-4xl"></span>
+                        </div>
+                    </div>
+                    <div class="mt-2 text-2xl md:text-4xl">with PW Skills</div>   
                 </div>
                 
-                <div class="text-[#3D3D3D] text-lg font-semibold mt-[16px] mr-0 mb-0 leading-7 opacity-100 headpara">
+                <div class="text-black text-base md:text-lg leading-6 md:leading-[26px] font-light text-center md:text-left  mt-4 md:w-[90%] opacity-100 headpara mx-3">
                     <div class="md:pr-14 pr-2">PW Skills is your one-stop-shop for upscaling. Get maximum value for time and resources you invest, with job-ready courses & high-technology,available at the lowest cost.
                     </div>
                 </div>
-                <button class="text-white bg-[#E97862]  font-semibold font-sans text-center rounded-md py-2 px-14 cursor-pointer mt-8">
+                <button class="text-white bg-[#E97862]  hover:bg-[orange-600] text-sm md:text-base font-semibold flex gap-2 justify-center items-center font-sans rounded-md cursor-pointer mx-auto md:mx-0 w-auto px-[88px] py-[13px] md:px-12 md:py-3 mt-8">
                     Explore Courses
                  </button>
             </div>
             
             <!--right section-->
-            <div class="w-[40%] relative">
+            <div class="max-w-screen-smw md:w-[42%] relative mx-auto z-50 px-3">
                  <img src="./images/hero-bg.png" alt="" class="">
                  <img src="./images/hero-shadow.png" alt="" class="absolute top-28 right-10 z-10 opacity-100">
             </div>
         </div>
 
         <!--4-boxes-->
-        <div class="max-w-[1188px] flex flex-row items-center justify-center md:justify-between gap-x-5 md:gap-x-0 mx-auto mt-10 gap-y-6 flex-wrap ">
+        <div class="max-w-[1280px] flex flex-row items-center justify-center md:justify-between gap-x-5 md:gap-x-3 mx-auto mt-10 gap-y-6 flex-wrap ">
             <!--box-1-->
              <div class="bg-white h-24 w-72 flex flex-row rounded-xl justify-center items-center gap-7 shadow-md shadow-gray-200">
                 <img src="./images/statistics1.png" alt="" class="">
@@ -179,9 +183,9 @@
     </main>
    
     <!--Courses-->
-    <div class="coursesbackground  py-8 overflow-x-hidden flex flex-col">
+    <div class="max-w-[1440px] coursesbackground  py-8 md:py-14 overflow-x-hidden flex flex-col mx-auto">
         
-            <header class="max-w-[1280px] relative flex justify-between mx-24">
+            <header class="max-w-[1280px] flex justify-between mx-24 ">
                 <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Our Courses</h2>
                 <div class="hidden mywidth:block minw:block">
                     <button class="bg-white text-gray-800 font-bold text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300 aspiration">View all
@@ -190,14 +194,14 @@
                 </div>
             </header>
             
-            <div class="max-w-[1280px] px-20 ">
+            <div class="max-w-[1280px] mx-12 md:mx-24">
                 <div class="flex items-center mywidth:justify-start justify-between border-b gap-x-6 test-gray-800 mt-4">
     
                     <div class=" relative h-full flex items-center justify-center">
                         <div class="flex flex-col text-sm py-[10px] md:text-base md:px-6 md:py-3 font-semibold gap-2 justify-center items-center aspiration cursor-pointer text-gray-900 rounded-none px-1">Trending</div>
-                        <div class="block border-b border-gray-900 absolute bottom-[-1px] w-[100%]"></div> 
+                        <div class="block border-b-2 border-gray-900 absolute bottom-[-1px] w-[100%]"></div> 
                         <!--line-->
-                        <div class=" block border-b border-gray-900 mx-auto mt-3 bottom-[-1px] w-full"></div>                             
+                        <div class=" block border-b-2 border-gray-900 mt-3 bottom-[-1px] w-full"></div>                             
                     </div>
         
                     <div class="relative h-full flex items-center justify-center">
@@ -213,319 +217,322 @@
                     
                 </div>
             </div>
+
+            <!--OUR COURSES-->
+            <div class="max-w-[1280px] pt-6 scroll-smooth items-center mx-auto flex flex-row justify-center gap-x-10 py-8 ">
+                <!-- box-1 -->
+                <div class="bg-white w-full  smw:w-[50%] minw:w-[30%] rounded-3xl overflow-hidden mx-6">
+                    <!--image-1-->
+                    <img src="./images/Full Stack Web Development.png" alt="" class="">
+                    <!--course header-->
+                    <div class="flex flex-row space-x-8 py-4 px-5">
+                        <h3 class="font-bold text-xl capitalize leading-[26px]">Decode full stack web dev 1.0</h3>
+                        
+                        <div class="bg-gray-100 w-10 h-9 rounded-full ">
+                            <i class="fa-solid fa-share pl-[11px] pt-[9px]" style="color: #e97862;"></i>
+                        </div>
+                    </div>      
+                    <!--course information-->
+                    <div class="flex flex-col py-4 px-5 items-start gap-4 justify-center">
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/Advocate_woman_icon.svg" alt="" class="w-6 h-6 opacity-25">
+                            <div class="font-semibold">Hitesh Chaudhary <span class="text-gray-500 font-normal">and 3 more</span></div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/chatbot.svg" alt="" class="w-4 h-4 m-1 opacity-25">
+                            <div class="font-semibold">Start on 25 Nov 2023</div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/youtube_button.svg" alt="" class="w-6 h-6 opacity-25">
+                            <div class="font-semibold">Projects | Pracitice Exercises <span class="text-gray-500">& More</span></div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/Advocate_logo.svg" alt="" class="w-6 h-6 opacity-100">
+                            <div class="font-semibold capitalize">School students & college student</div>
+                        </div>
+                    <!--line-->
+                    <div class="w-full h-[0.5px] bg-gray-300 mx-auto mt-3 "></div>
+
+                    <!--price-3500.00-->
+                    <div class="flex flex-row gap-x-4 mb-1 items-center">
+                        <div class="text-gray-900 leading-[26px] text-lg font-semibold">₹ 3500.00 <span class="line-through text-gray-500 text-sm font-thin pb-10">7000.00</span></div>
+                        <div class="flex ">
+                            <img src="./images/percentage_logo.svg" alt="" class="h-4 w-5">
+                            <div class="text-xs leading-[18px] font-semibold text-[#5CA34B]">50% Discount</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Button Section-->
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="text-[#E97862] w-[50%] bg-gray-200  bg-cover font-semibold font-sans text-center cursion-pointer px-3 py-[10px]">
+                            Explore
+                        </button>
+
+                        <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer">
+                            Enroll Now
+                        </button>
+                    </div>    
+                </div>
+
+
+                <!-- box-2 -->
+                <div class="bg-white hidden smw:block w-[50%] minw:w-[30%] rounded-3xl overflow-hidden">
+                    <!--image-1-->
+                    <img src="./images/Full Stack Web Development.png" alt="" class="">
+                    <!--course header-->
+                    <div class="flex flex-row space-x-8 py-4 px-5">
+                        <h3 class="font-bold text-xl capitalize leading-[26px]">Decode full stack web dev 1.0</h3>
+                        
+                        <div class="bg-gray-100 w-10 h-9 rounded-full ">
+                            <i class="fa-solid fa-share pl-[11px] pt-[9px]" style="color: #e97862;"></i>
+                        </div>
+                    </div>      
+                    <!--course information-->
+                    <div class="flex flex-col py-4 px-5 items-start gap-4 justify-center">
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/Advocate_woman_icon.svg" alt="" class="w-6 h-6 opacity-25">
+                            <div class="font-semibold">Hitesh Chaudhary <span class="text-gray-500 font-normal">and 3 more</span></div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/chatbot.svg" alt="" class="w-4 h-4 m-1 opacity-25">
+                            <div class="font-semibold">Start on 25 Nov 2023</div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/youtube_button.svg" alt="" class="w-6 h-6 opacity-25">
+                            <div class="font-semibold">Projects | Pracitice Exercises <span class="text-gray-500">& More</span></div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/Advocate_logo.svg" alt="" class="w-6 h-6 opacity-100">
+                            <div class="font-semibold capitalize">School students & college student</div>
+                        </div>
+                    <!--line-->
+                    <div class="w-full h-[0.5px] bg-gray-300 mx-auto mt-3 "></div>
+
+                    <!--price-3500.00-->
+                    <div class="flex flex-row gap-x-4 mb-1 items-center">
+                        <div class="text-gray-900 leading-[26px] text-lg font-semibold">₹ 3500.00 <span class="line-through text-gray-500 text-sm font-thin pb-10">7000.00</span></div>
+                        <div class="flex ">
+                            <img src="./images/percentage_logo.svg" alt="" class="h-4 w-5">
+                            <div class="text-xs leading-[18px] font-semibold text-[#5CA34B]">50% Discount</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Button Section-->
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="text-[#E97862] w-[50%] bg-gray-200  bg-cover font-semibold font-sans text-center cursion-pointer px-3 py-[10px]">
+                            Explore
+                        </button>
+
+                        <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer">
+                            Enroll Now
+                        </button>
+                    </div>    
+                </div>
+
+                <!-- box-3 -->
+                <div class="bg-white hidden minw:block w-[30%] rounded-3xl overflow-hidden">
+                    <!--image-1-->
+                    <img src="./images/Full Stack Web Development.png" alt="" class="">
+                    <!--course header-->
+                    <div class="flex flex-row space-x-8 py-4 px-5">
+                        <h3 class="font-bold text-xl capitalize leading-[26px]">Decode full stack web dev 1.0</h3>
+                        
+                        <div class="bg-gray-100 w-10 h-9 rounded-full ">
+                            <i class="fa-solid fa-share pl-[11px] pt-[9px]" style="color: #e97862;"></i>
+                        </div>
+                    </div>      
+                    <!--course information-->
+                    <div class="flex flex-col py-4 px-5 items-start gap-4 justify-center">
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/Advocate_woman_icon.svg" alt="" class="w-6 h-6 opacity-25">
+                            <div class="font-semibold">Hitesh Chaudhary <span class="text-gray-500 font-normal">and 3 more</span></div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/chatbot.svg" alt="" class="w-4 h-4 m-1 opacity-25">
+                            <div class="font-semibold">Start on 25 Nov 2023</div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/youtube_button.svg" alt="" class="w-6 h-6 opacity-25">
+                            <div class="font-semibold">Projects | Pracitice Exercises <span class="text-gray-500">& More</span></div>
+                        </div>
+
+                        <div class="flex flex-row space-x-4 text-sm">
+                            <img src="./images/Advocate_logo.svg" alt="" class="w-6 h-6 opacity-100">
+                            <div class="font-semibold capitalize">School students & college student</div>
+                        </div>
+                    <!--line-->
+                    <div class="w-full h-[0.5px] bg-gray-300 mx-auto mt-3 "></div>
+
+                    <!--price-3500.00-->
+                    <div class="flex flex-row gap-x-4 mb-1 items-center">
+                        <div class="text-gray-900 leading-[26px] text-lg font-semibold">₹ 3500.00 <span class="line-through text-gray-500 text-sm font-thin pb-10">7000.00</span></div>
+                        <div class="flex ">
+                            <img src="./images/percentage_logo.svg" alt="" class="h-4 w-5">
+                            <div class="text-xs leading-[18px] font-semibold text-[#5CA34B]">50% Discount</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Button Section-->
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="text-[#E97862] w-[50%] bg-gray-200  bg-cover font-semibold font-sans text-center cursion-pointer px-3 py-[10px]">
+                            Explore
+                        </button>
+
+                        <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer shadow-sm shadow-gray-300">
+                            Enroll Now
+                        </button>
+                    </div>    
+                </div>
+
+            </div>
+        
+            <!--left and right shift arrow-->
+            <div class="hidden smw:block">
+                <div class="max-w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
+                    <div class="bg-white w-10 h-10 rounded-full ">
+                        <i class="fa-solid fa-chevron-left opacity-40 pl-4 pt-3" style="color: #e97862;"></i>
+                    </div>
+                    <div class="bg-white w-10 h-10  rounded-full ">
+                        <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="flex justify-center ">
+                <div class="block mywidth:hidden">
+                    <button class="bg-white mt-3 text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300">View all
+                        <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
+                    </button>
+                </div>
+            </div>
     </div>
             
-        
-        
-        
-        <!--OUR COURSES-->
-        <div class="max-w-[1280px] pt-6 scroll-smooth items-center mx-auto flex flex-row justify-center gap-x-10 py-8 ">
-            <!-- box-1 -->
-            <div class="bg-white w-full  smw:w-[50%] minw:w-[30%] rounded-3xl overflow-hidden">
-                <!--image-1-->
-                <img src="./images/Full Stack Web Development.png" alt="" class="">
-                <!--course header-->
-                <div class="flex flex-row space-x-8 py-4 px-5">
-                    <h3 class="font-bold text-xl capitalize leading-[26px]">Decode full stack web dev 1.0</h3>
-                    
-                    <div class="bg-gray-100 w-10 h-9 rounded-full ">
-                        <i class="fa-solid fa-share pl-[11px] pt-[9px]" style="color: #e97862;"></i>
-                    </div>
-                </div>      
-                <!--course information-->
-                <div class="flex flex-col py-4 px-5 items-start gap-4 justify-center">
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/Advocate_woman_icon.svg" alt="" class="w-6 h-6 opacity-25">
-                        <div class="font-semibold">Hitesh Chaudhary <span class="text-gray-500 font-normal">and 3 more</span></div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/chatbot.svg" alt="" class="w-4 h-4 m-1 opacity-25">
-                        <div class="font-semibold">Start on 25 Nov 2023</div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/youtube_button.svg" alt="" class="w-6 h-6 opacity-25">
-                        <div class="font-semibold">Projects | Pracitice Exercises <span class="text-gray-500">& More</span></div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/Advocate_logo.svg" alt="" class="w-6 h-6 opacity-100">
-                        <div class="font-semibold capitalize">School students & college student</div>
-                    </div>
-                <!--line-->
-                <div class="w-full h-[0.5px] bg-gray-300 mx-auto mt-3 "></div>
-
-                <!--price-3500.00-->
-                <div class="flex flex-row gap-x-4 mb-1 items-center">
-                    <div class="text-gray-900 leading-[26px] text-lg font-semibold">₹ 3500.00 <span class="line-through text-gray-500 text-sm font-thin pb-10">7000.00</span></div>
-                    <div class="flex ">
-                        <img src="./images/percentage_logo.svg" alt="" class="h-4 w-5">
-                        <div class="text-xs leading-[18px] font-semibold text-[#5CA34B]">50% Discount</div>
-                    </div>
-                </div>
-                </div>
-                <!--Button Section-->
-                <div class="flex flex-row justify-between w-full">
-                    <button class="text-[#E97862] w-[50%] bg-gray-200  bg-cover font-semibold font-sans text-center cursion-pointer px-3 py-[10px]">
-                        Explore
-                    </button>
-
-                    <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer">
-                        Enroll Now
-                    </button>
-                </div>    
-            </div>
-
-
-            <!-- box-2 -->
-            <div class="bg-white hidden smw:block w-[50%] minw:w-[30%] rounded-3xl overflow-hidden">
-                <!--image-1-->
-                <img src="./images/Full Stack Web Development.png" alt="" class="">
-                <!--course header-->
-                <div class="flex flex-row space-x-8 py-4 px-5">
-                    <h3 class="font-bold text-xl capitalize leading-[26px]">Decode full stack web dev 1.0</h3>
-                    
-                    <div class="bg-gray-100 w-10 h-9 rounded-full ">
-                        <i class="fa-solid fa-share pl-[11px] pt-[9px]" style="color: #e97862;"></i>
-                    </div>
-                </div>      
-                <!--course information-->
-                <div class="flex flex-col py-4 px-5 items-start gap-4 justify-center">
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/Advocate_woman_icon.svg" alt="" class="w-6 h-6 opacity-25">
-                        <div class="font-semibold">Hitesh Chaudhary <span class="text-gray-500 font-normal">and 3 more</span></div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/chatbot.svg" alt="" class="w-4 h-4 m-1 opacity-25">
-                        <div class="font-semibold">Start on 25 Nov 2023</div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/youtube_button.svg" alt="" class="w-6 h-6 opacity-25">
-                        <div class="font-semibold">Projects | Pracitice Exercises <span class="text-gray-500">& More</span></div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/Advocate_logo.svg" alt="" class="w-6 h-6 opacity-100">
-                        <div class="font-semibold capitalize">School students & college student</div>
-                    </div>
-                <!--line-->
-                <div class="w-full h-[0.5px] bg-gray-300 mx-auto mt-3 "></div>
-
-                <!--price-3500.00-->
-                <div class="flex flex-row gap-x-4 mb-1 items-center">
-                    <div class="text-gray-900 leading-[26px] text-lg font-semibold">₹ 3500.00 <span class="line-through text-gray-500 text-sm font-thin pb-10">7000.00</span></div>
-                    <div class="flex ">
-                        <img src="./images/percentage_logo.svg" alt="" class="h-4 w-5">
-                        <div class="text-xs leading-[18px] font-semibold text-[#5CA34B]">50% Discount</div>
-                    </div>
-                </div>
-                </div>
-                <!--Button Section-->
-                <div class="flex flex-row justify-between w-full">
-                    <button class="text-[#E97862] w-[50%] bg-gray-200  bg-cover font-semibold font-sans text-center cursion-pointer px-3 py-[10px]">
-                        Explore
-                    </button>
-
-                    <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer">
-                        Enroll Now
-                    </button>
-                </div>    
-            </div>
-
-            <!-- box-3 -->
-            <div class="bg-white hidden minw:block w-[30%] rounded-3xl overflow-hidden">
-                <!--image-1-->
-                <img src="./images/Full Stack Web Development.png" alt="" class="">
-                <!--course header-->
-                <div class="flex flex-row space-x-8 py-4 px-5">
-                    <h3 class="font-bold text-xl capitalize leading-[26px]">Decode full stack web dev 1.0</h3>
-                    
-                    <div class="bg-gray-100 w-10 h-9 rounded-full ">
-                        <i class="fa-solid fa-share pl-[11px] pt-[9px]" style="color: #e97862;"></i>
-                    </div>
-                </div>      
-                <!--course information-->
-                <div class="flex flex-col py-4 px-5 items-start gap-4 justify-center">
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/Advocate_woman_icon.svg" alt="" class="w-6 h-6 opacity-25">
-                        <div class="font-semibold">Hitesh Chaudhary <span class="text-gray-500 font-normal">and 3 more</span></div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/chatbot.svg" alt="" class="w-4 h-4 m-1 opacity-25">
-                        <div class="font-semibold">Start on 25 Nov 2023</div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/youtube_button.svg" alt="" class="w-6 h-6 opacity-25">
-                        <div class="font-semibold">Projects | Pracitice Exercises <span class="text-gray-500">& More</span></div>
-                    </div>
-
-                    <div class="flex flex-row space-x-4 text-sm">
-                        <img src="./images/Advocate_logo.svg" alt="" class="w-6 h-6 opacity-100">
-                        <div class="font-semibold capitalize">School students & college student</div>
-                    </div>
-                <!--line-->
-                <div class="w-full h-[0.5px] bg-gray-300 mx-auto mt-3 "></div>
-
-                <!--price-3500.00-->
-                <div class="flex flex-row gap-x-4 mb-1 items-center">
-                    <div class="text-gray-900 leading-[26px] text-lg font-semibold">₹ 3500.00 <span class="line-through text-gray-500 text-sm font-thin pb-10">7000.00</span></div>
-                    <div class="flex ">
-                        <img src="./images/percentage_logo.svg" alt="" class="h-4 w-5">
-                        <div class="text-xs leading-[18px] font-semibold text-[#5CA34B]">50% Discount</div>
-                    </div>
-                </div>
-                </div>
-                <!--Button Section-->
-                <div class="flex flex-row justify-between w-full">
-                    <button class="text-[#E97862] w-[50%] bg-gray-200  bg-cover font-semibold font-sans text-center cursion-pointer px-3 py-[10px]">
-                        Explore
-                    </button>
-
-                    <button class="text-gray-100 bg-[#E97862]  w-[50%] bg-cover font-semibold font-sans text-center px-3 py-[10px] cursion-pointer shadow-sm shadow-gray-300">
-                        Enroll Now
-                    </button>
-                </div>    
-            </div>
-
-        </div>
-        
-         <!--left and right shift arrow-->
-         <div class="hidden smw:block">
-            <div class="max-w-[1280px] flex justify-center gap-x-4 py-4 mt-6 mx-auto ">
-                <div class="bg-white w-10 h-10 rounded-full ">
-                    <i class="fa-solid fa-chevron-left opacity-40 pl-4 pt-3" style="color: #e97862;"></i>
-                </div>
-                <div class="bg-white w-10 h-10  rounded-full ">
-                    <i class="fa-solid fa-chevron-right pl-4 pt-3" style="color: #e97862;"></i>
-                </div>
-             </div> 
-         </div>
-
-         <div class="flex justify-center ">
-            <div class="block mywidth:hidden">
-                <button class="bg-white mt-3 text-[#3D3D3D] font-medium text-center rounded py-3 px-5 cursor-pointer flex gap-3 shadow-md shadow-gray-300">View all
-                    <img src="./images/right arrow.svg" alt="" class="h-6 pt-1 opacity-70">
-                </button>
-            </div>
-         </div>
-
-        
-    </div>
-
+   
     <!--cards-section-->
-    <div class="max-w-[1280px] py-8 md:!py-14 md:mx-auto overflow-x-hidden">
-        <div class="px-4 md:px-15 w-full mywidth:w-fit ">
-            <h2 class="w-full text-[32px] leading-8 font-bold text-center mywidth:text-start">Explore Our Ecosystem</h2>
-            <h6 class="w-full text-lg font-normal text-[#757575] mt-2 text-center mywidth:text-start">A one-stop destination for all your learning to placement needs</h6>
-            
-    
-            <!--Cards-->
-    
-            <div class="flex flex-col w-full mywidth:fit mywidth:flex-row items-center justify-between gap-x-16 pt-[40px] pr-[0px] pb-[0px]">
-                <!--left-section-->
-                <div class="flex flex-col boxw:flex-row gap-x-3">
-    
-                    <!--column-1-->
-                    <div class="flex flex-col items-center justify-center gap-y-4">
-                        <!--card-1-->
-                        <div class=" card group rounded-lg p-[14px] m-2 px-8 py-4 bg-sky-50 md:bg-transparent md:hover:bg-sky-50 h-[300px] w-full mywidth:w-[380px]">
+    <div class="max-w-[1440px] mx-auto">
+        
+        <div class="max-w-[1280px] py-8 md:!py-14 md:mx-auto overflow-x-hidden px-4">
+            <div class="px-4 md:px-15 w-full mywidth:w-fit ">
+                <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Explore Our Ecosystem</h2>
+                <h6 class="w-full text-base md:text-lg leading-6 md:leading-[26px] font-light text-[#757575] text-center mywidth:text-start aspiration">A one-stop destination for all your learning to placement needs</h6>
+                
+        
+                <!--Cards-->
+        
+                <div class="flex flex-col w-full mywidth:fit mywidth:flex-row items-center justify-between gap-x-16 pt-[40px] pr-[0px] pb-[0px]">
+                    <!--left-section-->
+                    <div class="flex flex-col boxw:flex-row gap-x-3">
+        
+                        <!--column-1-->
+                        <div class="flex flex-col items-center justify-center gap-y-4">
+                            <!--card-1-->
+                            <div class=" card group rounded-lg p-[14px] m-2 px-8 py-4 bg-sky-50 md:bg-transparent md:hover:bg-sky-50 h-[300px] w-full mywidth:w-[380px] duration-500">
 
-                            <img src="./images/products-icon1.png" alt="" class="">
-                            <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3 " >
-                                PW Skills Lab
-                            </h4>
-                            <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 mt-3 aspiration">
-                                Buying a new PC is no longer required, Access unlimited computing power!
-                            </p>
-                            <div class="smw:block md:hidden md:group-hover:block">
-                                <button class="text-white bg-black font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                                    Explore
-                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                                </button>
+                                <img src="./images/products-icon1.png" alt="" class="">
+                                <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3 " >
+                                    PW Skills Lab
+                                </h4>
+                                <p class="text-base md:text-lg leading-6 md:leading-[26px] font-normal text-gray-600 mt-3 aspiration">
+                                    Buying a new PC is no longer required, Access unlimited computing power!
+                                </p>
+                                <div class="smw:block md:hidden md:group-hover:block">
+                                    <button class="text-white bg-black font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                        Explore
+                                        <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                    </button>
+                                </div>
+
                             </div>
-
+            
+                            <!--card-2-->
+                            <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-pink-50 md:bg-transparent md:hover:bg-pink-50 h-[300px] w-full mywidth:w-[380px] duration-500">
+                                <img src="./images/products-icon2.png" alt="" class="">
+                                <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Experience Portal</h4>
+                                <p class="text-base md:text-lg leading-6 md:leading-[26px] font-normal mt-3 text-gray-600 aspiration">Self-paced portal prioritizes hands-on training with 570+ internship projects.</p>
+                                <div class="smw:block md:hidden md:group-hover:block">
+                                    <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                        Explore
+                                        <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        
+                            <!--card-3-->
+                            <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-purple-50 md:bg-transparent md:hover:bg-purple-50 h-[300px] w-full mywidth:w-[380px] duration-500">
+                                <img src="./images/products-icon3.png" alt="" class="">
+                                <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Hall Of Fame</h4>
+                                <p class="text-base md:text-lg leading-6 md:leading-[26px] font-normal text-gray-600 aspiration mt-3">Our student placements and 100K+ career transitions speak volumes.</p>
+                                <div class="smw:block md:hidden md:group-hover:block">
+                                    <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                        Explore
+                                        <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
                         </div>
         
-                        <!--card-2-->
-                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-pink-50 md:bg-transparent md:hover:bg-pink-50 h-[300px] w-full mywidth:w-[380px]">
-                            <img src="./images/products-icon2.png" alt="" class="">
-                             <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Experience Portal</h4>
-                             <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold mt-3 text-gray-500 aspiration">Self-paced portal prioritizes hands-on training with 570+ internship projects.</p>
-                             <div class="smw:block md:hidden md:group-hover:block">
-                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                                    Explore
-                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                                </button>
-                             </div>
-                             
-                         </div>
-                       
-                        <!--card-3-->
-                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-purple-50 md:bg-transparent md:hover:bg-purple-50 h-[300px] w-full mywidth:w-[380px]">
-                            <img src="./images/products-icon3.png" alt="" class="">
-                             <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Hall Of Fame</h4>
-                             <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 aspiration mt-3">Our student placements and 100K+ career transitions speak volumes.</p>
-                             <div class="smw:block md:hidden md:group-hover:block">
-                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                                    Explore
-                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                                </button>
-                             </div>
-                             
-                         </div>
-                    </div>
-    
-                    <!--column-2-->
-                    <div class="flex flex-col items-center justify-center gap-y-6 pt-8">
-                        <!--card-4-->
-                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-yellow-50 md:bg-transparent md:hover:bg-yellow-50 h-[300px] w-full mywidth:w-[380px]">
-                            <img src="./images/products-icon4.png" alt="" class="">
-                             <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Job Portal</h4>
-                             <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 aspiration mt-3">Use exceptional templates for a stand-out resume minus the sign up process.</p>
-                             <div class="smw:block md:hidden md:group-hover:block">
-                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                                    Explore
-                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                                </button>
-                             </div>
-                         </div>
-                        <!--card-5-->
-                        <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-blue-50 md:bg-transparent md:hover:bg-blue-50 h-[300px] w-full mywidth:w-[380px]">
-                            <img src="./images/products-icon5.png" alt="" class="">
-                            <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Become an affiliate</h4>
-                            <p class="text-base md:text-lg leading-6 md:leading-[26px] font-semibold text-gray-500 aspiration mt-3">Explore affiliate marketing opportunities and attain financial freedom.</p>
-                            <div class="smw:block md:hidden md:group-hover:block">
-                                <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
-                                    Explore
-                                    <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
-                                </button>
+                        <!--column-2-->
+                        <div class="flex flex-col items-center justify-center gap-y-6 pt-8">
+                            <!--card-4-->
+                            <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-yellow-50 md:bg-transparent md:hover:bg-yellow-50 h-[300px] w-full mywidth:w-[380px] duration-500">
+                                <img src="./images/products-icon4.png" alt="" class="">
+                                <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Job Portal</h4>
+                                <p class="text-base md:text-lg leading-6 md:leading-[26px] font-normal mt-3 text-gray-600 aspiration">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                                <div class="smw:block md:hidden md:group-hover:block">
+                                    <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                        Explore
+                                        <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--card-5-->
+                            <div class="card group rounded-lg p-[14px] m-2 px-8 py-8 bg-blue-50 md:bg-transparent md:hover:bg-blue-50 h-[300px] w-full mywidth:w-[380px] duration-500">
+                                <img src="./images/products-icon5.png" alt="" class="">
+                                <h4 class="text-gray-900 text-2xl  leading-[30px] font-bold mt-3">Become an affiliate</h4>
+                                <p class="text-base md:text-lg leading-6 md:leading-[26px] font-normal mt-3 text-gray-600 aspiration">Explore affiliate marketing opportunities and attain financial freedom.</p>
+                                <div class="smw:block md:hidden md:group-hover:block">
+                                    <button class="text-white bg-black  font-bold font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 ">
+                                        Explore
+                                        <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!--right-section-->
-                 <div>
-                    <img src="./images/XML_Js_logo.svg"  class="h-[450px] w-[480px] hidden md:block" alt="">
-                 </div>
-            </div></div>
-    </div>
+                    
+                    <!--right-section-->
+                    <div>
+                        <img src="./images/XML_Js_logo.svg"  class="h-[450px] w-[480px] hidden md:block" alt="">
+                    </div>
+                </div></div>
+        </div>
+    </div> 
+
+        
+    
+
+    
 
 
     <!--Parallex_Effect Section-->
     <div class="wrapper overflow-x-hidden">
-        <div class="max-w-[1440px] relative hidden md:block">
+        <div class="max-w-[1440px] relative hidden md:block mx-auto">
             <!--section-1--> 
             <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-[#192A36] bg-fixed px-20 mx-auto flex flex-col md:flex-row items-center justify-center pb-0">
     
                 <div class="w-[1280px] z-10 pr-44 my-auto justify-center flex flex-col items-start relative">
                      <!--Circle-->
-                    <div class="hidden md:block h-80 w-80 rounded-full bg-[#398DC8]      absolute right-[38%] top-[21%] z-10">
+                    <div class="hidden md:block h-80 w-80 rounded-full bg-[#398DC8] absolute right-[38%] top-[21%] z-10">
     
                         <div class="h-full w-full flex flex-col justify-center items-center">
                             <div class="text-start">
@@ -538,12 +545,14 @@
                         </div>
                         </div>
                     </div>
-                    <div class="flex flex-col">
-                        <h1 class="text-4xl leading-9 font-bold text-white">Guilding You At Every <br>
-                        <span class="">Step!</span> </h1>
-                        <div class="text-base leading-6 font-normal text-[#EAECEF] mt-[8px] mr-[0px] mb-[0px]">Our Tap Mentors show you the way,<br> to becoming a thorough professinal!</div>
+                    <div class="space-y-2 pt-8">
+                        <h1 class="text-xl md:text-4xl leading-[30px] md:leading-8 font-thin md:font-bold text-white">Guilding You At Every 
+                        </h1>
+                        <span class="pt-4 text-xl md:text-4xl leading-[30px] md:leading-8 font-thin md:font-bold  text-white">Step!</span> 
+                        <div class="text-sm md:text-base leading-3[21px] md:leading-6 font-normal text-gray-100 ">Our Tap Mentors show you the way to <br>becoming a thorough professinal!</div>
     
-                        <div class="flex flex-col  gap-y-5 pt-10 flex-wrap">
+                        <div class="flex flex-col gap-x-4 w-full flex-wrap gap-y-3 pt-6">
+    
                             <div class="flex flex-row gap-x-4">
                                 <img src="./images/amazon-logo_arrow.svg" alt="" class="w-28">
                                 <img src="./images/google-logo.svg" alt="" class="w-28">
@@ -553,10 +562,14 @@
                                 <img src="./images/microsoft-logo.svg" alt="" class="w-28">
                                 <img src="./images/linkedin-logo.svg" alt="" class="w-28">
                             </div>
+                            
                         </div>
                         <p class="text-yellow-500 pt-10">& more...</p>
                         <div class="flex flex-col gap-y-7">
-                            
+                            <button class="text-[#192A36] bg-white  font-medium gap-5 font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 w-fit">
+                                Explore
+                                <i class="fa-solid fa-arrow-right fa-sm hidden" style="color: #192A36;"></i>
+                            </button>
                             <button class="text-white bg-[#192A36]  font-semibold font-sans text-center rounded-md px-6 py-6 cursor-pointer mt-6 w-fit">
                                 SKIP
                                 <i class="fa-solid fa-arrow-right fa-lg hidden" style="color: #ffffff;"></i>
@@ -577,21 +590,22 @@
             <div class="w-[100%]">
                 <img src="./images/banner-1.png" alt="" class="w-[100%]">
             </div>
-            <div class="flex flex-col">
-                <div class="w-full bg-no-repeat bg-center bg-cover bg-[#192A36] bg-fixed px-4  flex flex-col justify-center items-center my-auto h-[340px] -mt-4">
+            <div class="flex flex-col mt-3">
+                <div class="w-full bg-no-repeat bg-center bg-cover bg-[#192A36] bg-fixed px-4  flex flex-col justify-center items-center my-auto  -mt-4 pt-4">
                     <div class="flex flex-col items-center justify-center ">
-                        <h2 class="text-3xl leading-9 font-bold text-white">Guiding You At Every Step!</h2>
-                        <p class="text-base leading-6 font-normal text-[#EAECEF] mt-[8px] mr-[0px] mb-[0px]">Our Top Mentors show you the way to becoming a thorough professional!</p>
-                        <div class="flex flex-row gap-x-4 pt-6">
-                            <img src="./images/amazon-logo_arrow.svg" alt="" class="w-28">
-                            <img src="./images/google-logo.svg" alt="" class="w-28">
+                        <h2 class="text-xl md:text-2xl leading-[30px]md:leading-8 font-bold text-white">Guiding You At Every Step!</h2>
+                        <p class="text-sm md:text-base leading-[21px]
+                        md:leading-6 text-gray-100 mt-3 text-center">Our Top Mentors show you the way to becoming a thorough professional!</p>
+                        <div class="flex gap-x-4 w-full flex-wrap gap-y-3 pt-6 justify-center items-center">
+                            <img src="./images/amazon-logo_arrow.svg" alt="" class="w-24">
+                            <img src="./images/google-logo.svg" alt="" class="w-24">
                             <img src="./images/walmart-logo.svg" alt="" class="w-28">
                             <img src="./images/microsoft-logo.svg" alt="" class="w-28">
                             <img src="./images/linkedin-logo.svg" alt="" class="w-28">
                         </div>
                         <p class="text-yellow-500 pt-5 text-center">& more...</p>
                     </div>
-                    <button class="text-black bg-white font-medium gap-5 font-sans text-center rounded-md py-3 px-8 cursor-pointer mt-6 w-full">
+                    <button class="text-black bg-white font-medium gap-5 font-sans text-center rounded-md py-3 px-8 cursor-pointer my-3 w-full">
                         Explore
                         <i class="fa-solid fa-arrow-right fa-sm hidden" style="color: #000;"></i>
                     </button>
@@ -601,7 +615,7 @@
 
 
 
-        <div class="max-w-[1440px] relative hidden md:block">
+        <div class="max-w-[1440px] relative hidden md:block mx-auto">
             <!--section-2--> 
             <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-[#3A9076] bg-fixed px-20 mx-auto flex items-center justify-center pb-0">
     
@@ -660,7 +674,7 @@
         </div>
 
 
-        <div class="max-w-[1440px] relative hidden md:block">
+        <div class="max-w-[1440px] relative hidden md:block mx-auto">
             <!--section-3--> 
             <div class="px-20 mx-auto w-full h-screen bg-no-repeat bg-center bg-cover bg-[#9D4438] bg-fixed flex items-center justify-center pb-0">
     
@@ -719,7 +733,7 @@
             </div>
         </div>
 
-        <div class="max-w-[1440px] relative hidden md:block">
+        <div class="max-w-[1440px] relative hidden md:block mx-auto">
             <!--section-4--> 
             <div class="px-20 mx-auto w-full h-screen bg-no-repeat bg-center bg-cover bg-[#80467D] bg-fixed flex items-center justify-center pb-0">
     
@@ -780,9 +794,9 @@
     </div>
 
     <!--Our Achievers Work With-->
-    <div class="max-w-[1440px] pt-24 achievers">
-        <div class="max-w-[1280px] px-20 py-8 mx-auto">
-            <h2 class="w-full text-[36px] leading-8 font-bold mywidth:w-fit text-center md:text-start">Our Achievers Work With</h2>
+    <div class="max-w-[1440px] pt-16 achievers mx-auto">
+        <div class="max-w-[1280px] px-16 py-8 mx-auto">
+            <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Our Achievers Work With</h2>
             <div class="flex items-center justify-center md:flex-between gap-16 py-8">
                 <div class="">
                     <div class="bg-white h-24 w-72 rounded-xl flex justify-center items-center shadow-sm shadow-gray-300">
@@ -824,7 +838,7 @@
     </div>
 
      <!--Success Stories-->
-     <div class="max-w-[1440px] py-14 flex flex-col achievers px-4 md:px-20">
+     <div class="max-w-[1440px] py-14 flex flex-col achievers px-4 md:px-20 mx-auto">
                 
         <header class=" flex justify-between ">
             <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Success Stories</h2>
@@ -1028,7 +1042,7 @@
     </div>
      
     <!--Frequently Asked Question Section-->
-    <section class="max-w-[1440px] flex flex-col py-20 bg-gray-50 px-4 md:px-20">
+    <section class="max-w-[1440px] flex flex-col py-20 bg-gray-50 px-4 md:px-20 mx-auto">
         
         <header class=" flex justify-between items-center leading-[30px] ">
             <h2 class="text-[22px] smw:text-[32px] font-bold w-full mywidth:w-fit text-center">Frequently Asked Questions</h2>
@@ -1083,7 +1097,7 @@
     </section>
 
     <!--Footer Section-->
-    <footer class="max-w-[1440px] px-20  bg-gray-900">
+    <footer class="max-w-[1440px] px-5 md:px-20 bg-gray-900 mx-auto">
         <div class="max-w-[1280px] mx-auto w-7xl py-16 flex flex-col md:flex-row justify-between flex-wrap">
              <!--left section-->
            <div class="space-y-6 flex flex-col justify-start">
@@ -1158,9 +1172,9 @@
     <script>
       var typeData = new Typed(".role", {
         strings: [
-          "PRACTICAL",
-          "AFFORDABLE",
-          "EASY",
+          " PRACTICAL",
+          " AFFORDABLE",
+          " EASY",
           
           
         ],
